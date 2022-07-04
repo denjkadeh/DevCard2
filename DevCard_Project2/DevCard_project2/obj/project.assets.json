@@ -80,7 +80,7 @@
           "lib/net6.0/Microsoft.Build.dll": {}
         },
         "runtime": {
-          "lib/net6.0/_._": {}
+          "lib/net6.0/Microsoft.Build.dll": {}
         }
       },
       "Microsoft.Build.Framework/17.0.0": {
@@ -92,7 +92,7 @@
           "lib/netstandard2.0/Microsoft.Build.Framework.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.Build.Framework.dll": {}
         }
       },
       "Microsoft.Build.Locator/1.4.1": {
@@ -909,7 +909,7 @@
           "lib/netstandard2.0/Microsoft.NET.StringTools.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Microsoft.NET.StringTools.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {
@@ -1102,7 +1102,11 @@
           "ref/netstandard1.3/Microsoft.Win32.Registry.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/_._": {
+          "runtimes/unix/lib/netstandard1.3/Microsoft.Win32.Registry.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2576,10 +2580,14 @@
           "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.1/_._": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2678,7 +2686,7 @@
           "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -8633,6 +8641,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.Build >= 17.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.6"
     ]
   },
@@ -8675,6 +8684,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.Build": {
+            "target": "Package",
+            "version": "[17.0.0, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.6, )"

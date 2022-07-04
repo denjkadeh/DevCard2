@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "DevCard_project2/1.0.0": {
         "dependencies": {
+          "Microsoft.Build": "17.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.6"
         },
         "runtime": {
@@ -79,11 +80,23 @@
           "System.Text.Encoding.CodePages": "4.5.1",
           "System.Text.Json": "5.0.2",
           "System.Threading.Tasks.Dataflow": "4.9.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Build.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.0.0.52104"
+          }
         }
       },
       "Microsoft.Build.Framework/17.0.0": {
         "dependencies": {
           "System.Security.Permissions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Build.Framework.dll": {
+            "assemblyVersion": "15.1.0.0",
+            "fileVersion": "17.0.0.52104"
+          }
         }
       },
       "Microsoft.Build.Locator/1.4.1": {
@@ -841,6 +854,12 @@
         "dependencies": {
           "System.Memory": "4.5.4",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.NET.StringTools.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.26302"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {},
