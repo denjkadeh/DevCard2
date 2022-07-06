@@ -12,10 +12,10 @@ namespace DevCard_project2.ViewComponents
            
             var projects = new List<Project2 >
             {
-              new  Project2 (id:1,name:"احمد",description:"استاد احمد رحیمی ","project-1.jpg",client:"شماره شناسایی 12"),
-              new  Project2 (id:2,name:"رضا",description:"استاد رضا رحیمی ","project-2.jpg",client:"شماره شناسایی 13"),
-              new  Project2 (id:3,name:"محسن",description:"استاد محسن رحیمی ","project-3.jpg",client:"شماره شناسایی 14"),
-              new  Project2 (id:4,name:"علی",description:"استاد علی رحیمی ","project-4.jpg", client:"شماره شناسایی 15"),
+              new  Project2 (id:1,name:"علی",description:" برنامه نویس و عضو هیات مدیره علی  ","project-1.jpg",client:"برنامه نویس و عضو هیات مدیره1"),
+              new  Project2 (id:2,name:"نیما",description:"نیما برنامه نویس و عضو هیات مدیره ","project-2.jpg",client:"برنامه نویس و عضو هیات مدیره2"),
+              new  Project2 (id:3,name:"میلاد",description:"برنامه نویس و عضو هیات مدیره میلاد ","project-3.jpg",client:"برنامه نویس و عضو هیات مدیره3"),
+              new  Project2 (id:4,name:"آصف",description:"آصف برنامه نویس و عضو هیات مدیره ","project-4.jpg", client:"برنامه نویس و عضو هیات مدیره4"),
 
             };
             return View("_Projects",projects);
