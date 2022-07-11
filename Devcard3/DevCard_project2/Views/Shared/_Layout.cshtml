@@ -2,42 +2,45 @@
 <html lang="fa">
 
 <head>
-	<title>هسته فناور باران</title>
+    <title>هسته فناور باران</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <script defer src="~/assets/fontawesome/js/all.js"></script>
 
-	<link  rel="stylesheet" href="~/assets/css/theme-1.css">
-	<link  rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/theme-1.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
 
 </head>
 
 <body>
 
-	<partial name="Header"/>
+<partial name="Header"/>
 
-	<div class="main-wrapper">
-		
-		@RenderBody()
+<div class="main-wrapper">
 
-		
-<partial name="Footer"/>
-		
+    @RenderBody()
 
-		
 
-	</div>
+    <partial name="Footer"/>
 
-	<!-- Javascript -->
-	<script src="~/assets/plugins/jquery-3.4.1.min.js"></script>
-	<script src="~/assets/plugins/popper.min.js"></script>
-	<script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</div>
+
+<!-- Javascript -->
+<script src="~/assets/plugins/jquery-3.4.1.min.js"></script>
+<script src="~/assets/plugins/popper.min.js"></script>
+<script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<!--<script type="text/javascript" src="@Url.Action("Test2", "Home")"></script>-->
+
 </body>
 
 </html>
